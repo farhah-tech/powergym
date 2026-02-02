@@ -1,0 +1,183 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* CENTER LOGIN */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* LOGIN BOX */
+.login {
+  background: rgba(0, 0, 0, 0.85);
+  width: 360px;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  color: #ff4d4d;
+}
+
+/* INPUTS */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* PASSWORD BOX */
+.password-box {
+  position: relative;
+}
+
+.password-box span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* MESSAGE */
+#msg,
+#Contactmsg {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* NAVBAR */
+nav {
+  background: rgba(0,0,0,0.9);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: #ff4d4d;
+}
+
+nav a,
+nav button {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #ff4d4d;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.8)
+    ),
+    url("https://images.unsplash.com/photo-1554284126-aa88f22d8b72")
+    center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* CARD */
+.card {
+  background: rgba(0,0,0,0.75);
+  margin: 40px auto;
+  padding: 40px;
+  width: 85%;
+  max-width: 1000px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #ff4d4d;
+}
+
+.card p {
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* IMAGES */
+.card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 25px;
+  }
+}

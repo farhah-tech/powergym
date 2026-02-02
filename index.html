@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- loginka -->
+     <div id="loginsection" class="center">
+        <div class="login">
+            <h2>Power Gym Login</h2>
+            <input type="text" id="name" placeholder="magaca(ugu badnaan 11 xaraf)">
+            <input type="email" id="email"
+            placeholder="email">
+            <input type="number" id="age"
+            placeholder="age">
+            <input type="text" id="phone"
+            placeholder="25261*******">
+            <div class="password-box">
+                <input type="password" id="password"
+                placeholder="password(8xaraf+lambar)">
+                <span onclick="togglePassword()">👁️</span>
+            </div>
+            <button onclick="login()">login</button>
+            <p id="msg"></p>
+
+        </div>
+     </div>
+     <!-- website -->
+<div id="site" style="display: none;">
+    <nav>
+        <h2>Power Gym</h2>
+    
+    <div>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Pricing">Pricing</a>
+        <a href="#Service">Service</a>
+        <a href="#Contact">Contact</a>
+        <button onclick="logout()">logout</button>
+    </div>
+    </nav>
+    <section id="Home" class="hero">
+        <h1> Kusoo Dhawoow Power Gym</h1>
+        <h2>waaku soo dhaweyneena si fiican</h2>
+        <p>meesha ugu fiican ee lagu dhiso jirkaga
+            iyo caafimaadkaga
+        </p>
+    </section>
+    <section id="About" class="card">
+        <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/03/17/72/47/360_F_317724775_qHtWjnT8YbRdFNIuq5PWsSYypRhOmalS.jpg" 
+            alt="Power Gym">
+            <div>
+                
+        <h2>nagu saabsan</h2>
+        <p>Power Gym waa xarun jimicsi oo casri ah
+            oo bixisa tababar iyo <P></P> qalab tayo saro  leh .
+            waxaan kaa caawineynaa inaad gaarto himilooyinkaaga 
+            cafimad iyo jirdhis
+        </p>
+        </div>
+        </div>
+    </section>
+    <section id="Pricing" class="card">
+        <div class="card">
+            <h2> qiimaha xubanimada</h2>
+            <div id="Pricing" class="card">
+                <h3>Bil Kasto</h3>
+                <p class="card"> $40</p>
+                <ul>
+                    <li>helitaan ka dhmaan qalabka</li>
+                <li>Tababar joogto ah</li>
+                <li>la talin caafimaadkaga</li>
+                </ul>
+                <a href="#Contact" class="button ">kubiir</a>
+            </div>
+        </div>
+    </section>
+    <Section id="Service" class="card">
+        <div class="card">
+            <h2>Adeegyada </h2>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/low-angle-view-unrecognizable-muscular-build-man-preparing-lifting-barbell-health-club_637285-2497.jpg"
+                 alt="Wieght trainer"/>
+                 <h3>Wieght trainer</h3>
+                 <p>tababar xoog leh oo lagu dhiso murqahaaga</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1277242852/photo/holding-weight-and-sitting.jpg?s=612x612&w=0&k=20&c=3sy-VVhUYjABpNEMI2aoruXQuOVb__-AUR6BzOHoSJg="
+                 alt="yoga">
+                 <h3>Yoga & felixibilty </h3>
+                 <p>Fududee maskaxdaada adigoo samenaya Yoga</p>
+            </div>
+        </div>
+
+    </SEction>
+    <section id="Contact" class="card">
+        <h2>Nala soo xiriir </h2>
+        <input type="text" id="cname"
+        placeholder="magaca">
+        <input type="email" id="cemail" 
+        placeholder="email">
+        <textarea id="cmsg"
+        placeholder="fariintaada"></textarea>
+        <button onclick="sendmsg()">Dir</button>
+        <p id="Contactmsg"></p>
+    </section>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
